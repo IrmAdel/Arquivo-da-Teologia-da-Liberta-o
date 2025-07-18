@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arquivo da Teologia da Libertação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f8d7da; /* vermelho claro suave (rosa avermelhado) */
+      color: #330000; /* texto vermelho escuro */
+    }
+    header {
+      background: #b71c1c; /* vermelho escuro */
+      padding: 1rem;
+      text-align: center;
+      color: white;
+      box-shadow: 0 2px 5px rgba(183, 28, 28, 0.5);
+    }
+    nav {
+      background: #c62828; /* vermelho médio */
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #ff8a80; /* vermelho claro para hover */
+    }
+    main {
+      background: white;
+      color: #330000;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(183, 28, 28, 0.3);
+    }
+    footer {
+      background: #b71c1c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+    article.post {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #b71c1c;
+      padding-bottom: 1rem;
+    }
+    article.post h3 {
+      margin-top: 0;
+      color: #b71c1c;
+    }
+    article.post time {
+      font-size: 0.9rem;
+      color: #8b0000;
+    }
+    article.post p {
+      margin: 0.5rem 0 0;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Arquivo da Teologia da Libertação</h1>
+  </header>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="autores.html">Autores</a>
+    <a href="cinetl.html">CineTL</a>
+    <a href="videos.html">Vídeos</a>
+    <a href="documentos.html">Documentos</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+<main>
+  <h2>Vídeos</h2>
+  <input
+    type="text"
+    id="authorSearch"
+    placeholder="Buscar pessoa..."
+    style="
+      width: 100%;
+      max-width: 400px;
+      padding: 0.5rem 0.75rem;
+      margin: 1rem 0 1.5rem 0;
+      font-size: 1rem;
+      border: 2px solid #b71c1c;
+      border-radius: 8px;
+      color: #330000;
+    "
+  />
+
+  <div class="authors-grid" id="authorsGrid">
+    <a href="videoscasaldaliga.html" class="author-card" data-name="Dom Pedro Casaldáliga" title="Dom Pedro Casaldáliga">
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBKNroBCX5_aTSM7o68efH4PrEWs6wQ3q5ZxTtBQdSRNoO07H4TulRL3wglq39fa8CRfxDiIvJTPRCy7qL5SMS8qTiybgxwfIBi4oel_3CCjUVVeOLQq30YuLj-T2FPp4tE-4ecBt_lI74SDPdeJ6uNGvHxTpW1yhkhkePfCUBUCAoogupSKU0UJ_fupDn/s320/Inserir%20um%20pouquinho%20de%20texto%20(1).png"
+        alt="Dom Pedro Casaldáliga"
+      />
+      <span>Dom Pedro Casaldáliga</span>
+    </a>
+    <a href="videosleonardoboff.html" class="author-card" data-name="Pe. Leonardo Boff" title="Pe. Leonardo Boff">
+      <img
+        src="https://assets.brasildefato.com.br/2024/09/image_processing20220104-17965-1uvjsty.jpeg"
+        alt="Pe. Leonardo Boff"
+      />
+      <span>Pe. Leonardo Boff</span>
+    </a>
+    <a href="videosenriquedussel.html" class="author-card" data-name="Enrique Dussel" title="Enrique Dussel">
+      <img
+        src="https://assets.brasildefato.com.br/2024/09/image_processing20231114-21259-uquqt5.jpeg"
+        alt="Enrique Dussel"
+      />
+      <span>Enrique Dussel</span>
+    </a>
+    <a href="videosfrancisco.html" class="author-card" data-name="Papa Francisco" title="Papa Francisco">
+      <img
+        src="https://fotos.perfil.com/2025/03/06/trim/987/555/el-papa-francisco-1979817.jpg"
+        alt="Papa Francisco"
+      />
+      <span>Papa Francisco</span>
+    </a>
+    <a href="videosjuliolancellotti.html" class="author-card" data-name="Pe. Julio Lancellotti" title="Pe. Julio Lancellotti">
+      <img
+        src="https://www.esquerdadiario.com.br/IMG/logo/capturar-18.jpg?1705708290"
+        alt="Pe. Julio Lancellotti"
+      />
+      <span>Pe. Julio Lancellotti</span>
+    </a>
+    <a href="videosandreagallo.html" class="author-card" data-name="Pe. Andrea Gallo" title="Pe. Andrea Gallo">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Don_Andrea_Gallo.JPEG/250px-Don_Andrea_Gallo.JPEG"
+        alt="Pe. Andrea Gallo"
+      />
+      <span>Pe. Andrea Gallo</span>
+    </a>
+    <a href="videospauloevaristoarns.html" class="author-card" data-name="Dom Paulo Evaristo Arns" title="Dom Paulo Evaristo Arns">
+      <img
+        src="https://memoriasdaditadura.org.br/wp-content/uploads/2023/09/Dom-Paulo-1.jpg"
+        alt="Dom Paulo Evaristo Arns"
+      />
+      <span>Dom Paulo Evaristo Arns</span>
+    </a>
+    <a href="videosheldercamara.html" class="author-card" data-name="Dom Hélder Câmara" title="Dom Hélder Câmara">
+      <img
+        src="https://editora.cepe.com.br/uploads/2017/05/09/5911c4db38699.dom-helder.default.jpg"
+        alt="Dom Hélder Câmara"
+      />
+      <span>Dom Hélder Câmara</span>
+    </a>
+  </div>
+
+  <script>
+// Função para ordenar os cards alfabeticamente
+  function ordenarPessoa() {
+    const container = document.getElementById('authorsGrid');
+    const cards = Array.from(container.getElementsByClassName('author-card'));
+
+    cards.sort((a, b) => {
+      const nomeA = a.getAttribute('data-name').toLowerCase();
+      const nomeB = b.getAttribute('data-name').toLowerCase();
+      return nomeA.localeCompare(nomeB);
+    });
+
+    // Remove todos os cards do container
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+
+    // Re-insere os cards na ordem correta
+    cards.forEach(card => container.appendChild(card));
+  }
+
+  // Chama a função ao carregar a página
+  window.addEventListener('DOMContentLoaded', () => {
+    ordenarPessoa();
+  });
+
+  // Script de filtro que você já tem (exemplo adaptado)
+  const searchInput = document.getElementById('authorSearch');
+  const authorsGrid = document.getElementById('authorsGrid');
+  const authors = authorsGrid.getElementsByClassName('author-card');
+
+  searchInput.addEventListener('input', () => {
+    const filter = searchInput.value.toLowerCase();
+
+    Array.from(authors).forEach(author => {
+      const name = author.getAttribute('data-name').toLowerCase();
+      if (name.includes(filter)) {
+        author.style.visibility = 'visible';
+        author.style.position = 'static';
+        author.style.pointerEvents = 'auto';
+        author.style.opacity = '1';
+      } else {
+        author.style.visibility = 'hidden';
+        author.style.position = 'absolute';
+        author.style.pointerEvents = 'none';
+        author.style.opacity = '0';
+      }
+    });
+  });
+  </script>
+</main>
+
+<style>
+  .authors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  .author-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8d7da;
+    border: 2px solid #b71c1c;
+    border-radius: 12px;
+    padding: 1rem;
+    text-decoration: none;
+    color: #330000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 3px 6px rgba(183, 28, 28, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.3s ease;
+    min-height: 240px;
+    justify-content: center;
+  }
+  .author-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+    border: 3px solid #b71c1c;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .author-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(183, 28, 28, 0.6);
+  }
+.author-card span {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+<style>
+  .authors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  .author-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8d7da;
+    border: 2px solid #b71c1c;
+    border-radius: 12px;
+    padding: 1rem;
+    text-decoration: none;
+    color: #330000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 3px 6px rgba(183, 28, 28, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .author-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+    border: 3px solid #b71c1c;
+  }
+  .author-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(183, 28, 28, 0.6);
+  }
+</style>
+
+
+  <footer>
+    <p>
+      &copy; 2025 Arquivo da Teologia da Libertação — Esta página faz parte da missão.  
+      Todo o conteúdo pode ser usado, copiado e republicado livremente, desde que mantida a referência à fonte.
+    </p>
+  </footer>
+</body>
+</html>
