@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contato — Arquivo da Teologia da Libertação</title>
-      <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -68,6 +68,21 @@
       margin-bottom: 1rem;
       border: 3px solid #b71c1c;
     }
+    .denominacao {
+      display: inline-block;
+      margin-top: 0.3rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: normal;
+      color: white;
+    }
+    /* Cores diferentes para cada denominação */
+    .anglicano { background: #1565c0; }   /* azul anglicano */
+    .catolico { background: #4a148c; }    /* roxo católico */
+    .luterano { background: #2e7d32; }    /* verde luterano */
+    .metodista { background: #d84315; }   /* laranja metodista */
+    .presbiteriano { background: #00695c; } /* verde petróleo presbiteriano */
     footer {
       background: #b71c1c;
       color: white;
@@ -100,18 +115,21 @@
     <div class="contact-card">
       <img src="https://i.ibb.co/b5b5MvwD/9-Sem-Titulo-20241105104950.webp" alt="Adel" />
       <span>Acól. Adel</span>
+      <span class="denominacao catolico">Igreja Católica Romana</span>
       <p style="font-weight: normal; margin-top: 0.5rem;">catolicismocomum@gmail.com</p>
     </div>
 
-      <div class="contact-card">
+    <div class="contact-card">
       <img src="https://media.discordapp.net/attachments/1396986065662902302/1435284394553380934/8e757856f0649973a7a35b7ec9bd1712.jpg?ex=690b6841&is=690a16c1&hm=fd75b0355d6c2a77b938b402b24768e7bdd5a5e9747115aa0ef34d8ddc4bfee7&=&format=webp&width=580&height=548" alt="Leiss" />
       <span>Cat. Leiss Karian</span>
-      <p style="font-weight: normal; margin-top: 0.5rem;"> leissmaryanne@gmail.com</p>
+      <span class="denominacao anglicano">Igreja Episcopal Anglicana do Brasil</span>
+      <p style="font-weight: normal; margin-top: 0.5rem;">leissmaryanne@gmail.com</p>
     </div>
 
-          <div class="contact-card">
+    <div class="contact-card">
       <img src="https://media.discordapp.net/attachments/1396986065662902302/1435294225230069931/image.png?ex=690b7169&is=690a1fe9&hm=ca4942223f56b855240a3bd339b2ca568e8ed6fe185c1f842d61f1cf8a76f0a7&=&format=webp&quality=lossless&width=242&height=228" alt="Ruan" />
       <span>Sem. Juan</span>
+      <span class="denominacao luterano">Igreja Evangélica de Confissão Luterana no Brasil</span>
       <p style="font-weight: normal; margin-top: 0.5rem;">ruansouzaalmeida13@gmail.com</p>
       <p style="font-weight: normal; margin-top: 0.5rem;">(65) 99635-7790</p>
     </div>
@@ -126,4 +144,3 @@
 
 </body>
 </html>
-
